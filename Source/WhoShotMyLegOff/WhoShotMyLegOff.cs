@@ -42,7 +42,7 @@ namespace WhoShotMyLegOff
                     int age = Find.TickManager.TicksGame - hediff.tickAdded;
                     StringBuilder sb = new StringBuilder();
                     sb.AppendTagged(combatLogText);
-                    sb.AppendLine().AppendLineTagged("OccurredTimeAgo".Translate(age.ToStringTicksToPeriod()).CapitalizeFirst() + ".");
+                    sb.AppendLine().AppendTagged("OccurredTimeAgo".Translate(age.ToStringTicksToPeriod()).CapitalizeFirst() + ".");
                     combatLogText = sb.ToString();
                 }
             }
